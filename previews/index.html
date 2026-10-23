@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J Lab · pick a direction</title>
+<meta name="theme-color" content="#1f0a0c">
+<link rel="icon" href="../brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Poppins:ital,wght@1,800&family=Bodoni+Moda:opsz,wght@6..96,900&family=Cinzel:wght@700&family=Manrope:wght@500;700;800&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: #1f0a0c; color: #f6ecdf; font: 500 16px/1.55 Manrope, system-ui, sans-serif; padding: clamp(24px, 5vw, 64px) clamp(16px, 4vw, 48px);
+    background-image: radial-gradient(60% 50% at 80% 0%, rgba(212,163,115,.14), transparent 70%), radial-gradient(70% 60% at 0% 100%, rgba(107,31,34,.6), transparent 70%); }
+  header { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+  header img { height: 58px; width: auto; }
+  header .wm { font: 700 1.5rem Cinzel, Georgia, serif; letter-spacing: .26em; }
+  h1 { margin: 0; font: 600 clamp(2.2rem, 5.5vw, 4rem)/1 "Cormorant Garamond", Georgia, serif; letter-spacing: -.01em; width: 100%; }
+  h1 i { color: #d4a373; font-weight: 500; }
+  .lead { margin: 12px 0 34px; color: #cdb7aa; max-width: 66ch; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 22px; }
+  a.card { position: relative; display: grid; grid-template-rows: auto 1fr; border-radius: 24px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid rgba(212,163,115,.2); background: #2a0f12; transition: transform .35s cubic-bezier(.22,1,.36,1), border-color .3s, box-shadow .35s; }
+  a.card:hover { transform: translateY(-6px); border-color: #d4a373; box-shadow: 0 30px 60px -30px rgba(212,163,115,.45); }
+  a.card:focus-visible { outline: 3px solid #d4a373; outline-offset: 4px; }
+  .thumb { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #14060a; }
+  .thumb iframe { position: absolute; left: 0; top: 0; width: 400%; height: 400%; transform: scale(.25); transform-origin: 0 0; border: 0; pointer-events: none; }
+  .thumb.app { display: grid; place-items: center; background: radial-gradient(60% 70% at 50% 40%, #8a2a30, #6b1f22 55%, #3e1013); }
+  .phone { width: 34%; aspect-ratio: 9 / 18; border-radius: 22px; border: 3px solid #2a0a0c; background: #f6efe4; display: grid; place-items: center; box-shadow: 0 24px 40px -18px rgba(0,0,0,.7); }
+  .phone img { width: 46%; height: auto; }
+  .body { padding: 18px 20px 22px; }
+  .tag { font: 800 .72rem Manrope; letter-spacing: .2em; text-transform: uppercase; color: #d4a373; }
+  h2 { margin: 6px 0 6px; font: 600 2.1rem/1 "Cormorant Garamond", Georgia, serif; }
+  .b h2 { font: 900 2.3rem/1 "Bodoni Moda", Georgia, serif; color: #f6d5cf; }
+  p { margin: 0; color: #e3d2c8; }
+  .go { display: inline-block; margin-top: 12px; font-weight: 800; color: #d4a373; }
+  .facts { margin-top: 40px; padding: 20px 22px; border-radius: 20px; border: 1px dashed rgba(212,163,115,.35); color: #cdb7aa; font-size: .92rem; max-width: 980px; display: grid; gap: 8px; }
+  .facts b { color: #f6ecdf; }
+  footer { margin-top: 28px; color: #9a8076; font-size: .85rem; }
+</style>
+</head>
+<body>
+<header><img src="../brand/mark-cream.png" alt="" width="420" height="600"><span class="wm">J LAB</span><h1>Two <i>directions</i></h1></header>
+<p class="lead">Two ways to put J Lab on the web. Both carry the menu from their in-store board, the girls’ nights from TikTok, the address, phone and booking line. Open each one and scroll all the way through, then pick one to build into the real site. The ordering and loyalty app is linked from both.</p>
+<div class="grid">
+  <a class="card" href="a/">
+    <div class="thumb"><iframe src="a/?nointro" title="Preview A" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="body"><span class="tag">A · 3D · the coffee</span><h2>Somalia’s first specialty coffee</h2><p>Deep burgundy, walnut and copper light. A steel pitcher pours steamed milk into an espresso and the latte art resolves into the J. Scroll and the counter changes: the espresso bar, the V60 slow bar, iced, desserts.</p><span class="go">Open A →</span></div>
+  </a>
+  <a class="card b" href="b/">
+    <div class="thumb"><iframe src="b/?nointro" title="Preview B" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="body"><span class="tag">B · 3D · the night issue</span><h2>The Night Issue</h2><p>J Lab as a magazine cover: blush paper, burgundy ink, Bodoni headlines. Two iced mojitos clink on a marble café table and the J rises in gold foil. Then the past nights as a contents page from their TikTok, and a four-step “Book your night” that opens WhatsApp.</p><span class="go">Open B →</span></div>
+  </a>
+  <a class="card" href="../app/">
+    <div class="thumb app"><div class="phone"><img src="../brand/mark-burgundy.png" alt="" width="420" height="600"></div></div>
+    <div class="body"><span class="tag">App</span><h2>Order in the app</h2><p>The J Lab app: order ahead, pay with EVC Plus or credit, show your Pay QR, collect stars, and reserve a table for girls’ night. Both directions link to it.</p><span class="go">Open the app →</span></div>
+  </a>
+</div>
+<div class="facts">
+  <p><b>Real (from J Lab’s TikTok @jlabc.so):</b> the J mark and burgundy, the tagline “Somalia’s first specialty coffee”, “Waxaan dhisnay wixii Muqdisho ka maqnaa”, address Taleex (Cabdiqasim), phone 077 182 6444, booking line 077 051 5017 (their event poster), girls’ nights on Wednesday and Thursday, the dress-code vote, the barista series, the TikTok videos and view counts. Menu names and prices are read off their in-store menu board in a TikTok video.</p>
+  <p><b>Placeholder:</b> prices hidden on the board (marked “demo”), the four desserts (a sample), opening hours (not published), all product pictures (3D renders), and everything money-related in the app.</p>
+</div>
+<footer>Previews for J Lab · Event photos: J Lab’s TikTok covers · 3D coffee ware modelled in code with three.js · HDRI and walnut: Poly Haven (CC0)</footer>
+</body>
+</html>
